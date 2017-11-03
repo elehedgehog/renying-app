@@ -15,14 +15,14 @@ export default {
   },
 
   mounted() {
-    let zmap = window.zmap = L.map('map-container', {
+    let map = window.map = L.map('map-container', {
       minZoom: 2,
       maxZoom: 18,
       zoomControl: false,
       attributionControl: false
     });
-    L.tileLayer(mapLayerConf.terrain).addTo(zmap);
-    zmap.setView([23.085, 113.154033], 8);
+    L.tileLayer(mapLayerConf.terrain).addTo(map);
+    map.setView([23.085, 113.154033], 8);
   }
 }
 </script>
