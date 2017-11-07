@@ -6,6 +6,18 @@ import router from './router'
 
 import './util/fontSize'
 Vue.config.productionTip = false
+import 'element-ui/lib/theme-chalk/index.css'
+import {
+  Message,
+  MessageBox,
+} from 'element-ui'
+Vue.prototype['$message'] = Message
+Vue.prototype['$confirm'] = MessageBox.confirm
+Vue.directive('focus', {
+  inserted: function (el) {
+    el.focus()
+  },
+});
 
 /* eslint-disable no-new */
 new Vue({

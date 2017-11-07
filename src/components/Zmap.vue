@@ -4,6 +4,7 @@
 
 <script>
 import L from 'leaflet'
+import '../util/zmap.meteo'
 import 'leaflet/dist/leaflet.css'
 import mapLayerConf from '../config/mapLayersConf'
 
