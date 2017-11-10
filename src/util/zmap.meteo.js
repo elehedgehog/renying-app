@@ -10,6 +10,7 @@ L.AngleMarker = L.Marker.extend({
       this._icon.style.MsTransform = this._icon.style.MsTransform + 'rotate(' + this.options.iconAngle + 'deg)';
       this._icon.style.OTransform = this._icon.style.OTransform + 'rotate(' + this.options.iconAngle + 'deg)';
       this._icon.style.Transform = this._icon.style.Transform + 'rotate(' + this.options.iconAngle + 'deg)';
+      this._icon.style.transform = this._icon.style.transform + 'rotate(' + this.options.iconAngle + 'deg)';
     }
     if (this.options.iconOrigin) {
       this._icon.style.WebkitTransformOrigin = this.options.iconOrigin;
@@ -17,6 +18,7 @@ L.AngleMarker = L.Marker.extend({
       this._icon.style.MsTransformOrigin = this.options.iconOrigin;
       this._icon.style.OTransformOrigin = this.options.iconOrigin;
       this._icon.style.TransformOrigin = this.options.iconOrigin;
+      this._icon.style.transformOrigin = this.options.iconOrigin;
     }
     this._icon.style.zIndex = pos.y;
     this._zIndex = pos.y + this.options.zIndexOffset;

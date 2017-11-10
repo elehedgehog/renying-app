@@ -95,7 +95,6 @@ export default {
         rh: { show: false, cname: '相对湿度', unit: '%' ,classname: 'rh'},
         // mean31_pwv : { show: false, cname: 'GPS水汽', unit: '' ,classname: 'water'},
       },
-
     }
   },
   mounted() {
